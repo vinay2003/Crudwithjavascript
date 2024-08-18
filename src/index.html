@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-slate-400">
+    <h1 class="text-center font-bold text-3xl m-3 p-3">Student Registration System</h1>
+    <div class="flex justify-center">
+        <div class="bg-zinc-500 border-b-4 p-6 rounded-lg shadow-md w-full max-w-md">
+            <form id="studentForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-white mb-2">Student Name:</label>
+                    <input type="text" name="name" id="name" class="w-full p-2 rounded border" placeholder="Enter student name" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="id" class="block text-white mb-2">Student ID:</label>
+                    <input type="number" name="id" id="id" class="w-full p-2 rounded border" placeholder="Enter student ID" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="class" class="block text-white mb-2">Class:</label>
+                    <input type="text" name="class" id="class" class="w-full p-2 rounded border" placeholder="Enter class" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="roll" class="block text-white mb-2">Roll Number:</label>
+                    <input type="number" name="roll" id="roll" class="w-full p-2 rounded border" placeholder="Enter roll number" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-zinc-500 border-b-4 p-6 rounded-lg shadow-md w-full max-w-md ml-4">
+            <h2 class="text-white text-xl font-bold mb-4">Registered Students</h2>
+            <table class="w-full text-white">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2">Name</th>
+                        <th class="border px-4 py-2">ID</th>
+                        <th class="border px-4 py-2">Class</th>
+                        <th class="border px-4 py-2">Roll No</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
